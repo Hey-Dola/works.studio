@@ -70,10 +70,16 @@ function updateStyles() {
         document.querySelectorAll("#page1 nav .menu .elems .move").forEach((e) => {
             e.style.transform = "translateX(100%)"
         });
-        document.querySelector("#page1 nav .menu .elems .smove1").style.transform = "translateX(130%)"
-        document.querySelector("#page1 nav .menu .elems .smove2").style.transform = "translateX(230%)"
-        document.querySelector("#page1 nav .menu .elems .smove3").style.transform = "translateX(330%)"
-        document.querySelector("#page1 nav .menu .elems .smove4").style.transform = "translateX(250%)"
+        document.querySelector("#page1 nav .menu .elems .smove1").style.transform = "translateX(50px)"
+        document.querySelector("#page1 nav .menu .elems .smove2").style.transform = "translateX(165px)"
+        document.querySelector("#page1 nav .menu .elems .smove3").style.transform = "translateX(270px)"
+        document.querySelector("#page1 nav .menu .elems .smove4").style.transform = "translateX(320px)"
+        
+        // document.querySelectorAll("#page1 nav .menu .elems .items").forEach((e) => {
+        //     e.style.position = "absolute";
+        //     e.style.right = "0";
+        // });
+
     }
 }
 // menubar end
