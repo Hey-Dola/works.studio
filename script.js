@@ -39,7 +39,7 @@ loader();
 var count = true;
 window.addEventListener("scroll", function () {
     var scrollValue = window.scrollY;
-    console.log("Scroll Value: " + scrollValue);
+    // console.log("Scroll Value: " + scrollValue); 
 
     if (scrollValue > 5) {
         count = false;
@@ -75,10 +75,6 @@ function updateStyles() {
         document.querySelector("#page1 nav .menu .elems .smove3").style.transform = "translateX(270px)"
         document.querySelector("#page1 nav .menu .elems .smove4").style.transform = "translateX(320px)"
         
-        // document.querySelectorAll("#page1 nav .menu .elems .items").forEach((e) => {
-        //     e.style.position = "absolute";
-        //     e.style.right = "0";
-        // });
 
     }
 }
