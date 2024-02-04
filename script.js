@@ -7,19 +7,16 @@
 function loader() {
     let tl = gsap.timeline()
     tl.to(".firstScreen", {
-        y: -1000,
+        height: 0,
         delay: 0.2,
-        duration: 0.5,
-
+        // duration: 0.3,
     })
     tl.to(":root", {
         '--bgc': 'transparent',
     })
     tl.to("#page1 .back .page1bgc", {
-        y: 0,
-        duration: 0.2,
-        // delay: 0.2,
-
+        height: "100%",
+        // duration: 0.3,
     })
     gsap.to(":root", {
         '--color': 'black',
@@ -28,7 +25,7 @@ function loader() {
     })
     gsap.to("#page1 .back video", {
         display: 'none',
-        delay: 0.5,
+        delay: 0.8,
     })
 }
 loader();
@@ -61,6 +58,8 @@ function updateStyles() {
         document.querySelectorAll("#page1 nav .menu .elems .move").forEach((e) => {
             e.style.transform = "translateX(0%)"
         });
+
+        // document.querySelector("#page1 nav .menu .elems .items").style.transition = "0.5s ease-in-out";
         document.querySelector("#page1 nav .menu .elems .smove1").style.transform = "translateX(0%)"
         document.querySelector("#page1 nav .menu .elems .smove2").style.transform = "translateX(0%)"
         document.querySelector("#page1 nav .menu .elems .smove3").style.transform = "translateX(0%)"
@@ -70,10 +69,11 @@ function updateStyles() {
         document.querySelectorAll("#page1 nav .menu .elems .move").forEach((e) => {
             e.style.transform = "translateX(100%)"
         });
+        // document.querySelector("#page1 nav .menu .elems .items").style.transition = "0.5s ease-in-out";
         document.querySelector("#page1 nav .menu .elems .smove1").style.transform = "translateX(50px)"
         document.querySelector("#page1 nav .menu .elems .smove2").style.transform = "translateX(165px)"
         document.querySelector("#page1 nav .menu .elems .smove3").style.transform = "translateX(270px)"
-        document.querySelector("#page1 nav .menu .elems .smove4").style.transform = "translateX(320px)"
+        document.querySelector("#page1 nav .menu .elems .smove4").style.transform = "translateX(290px)"
         
 
     }
