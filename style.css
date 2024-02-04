@@ -354,27 +354,3 @@ footer h1 {
     font-family: footer;
     text-transform: uppercase;
 }
-
-
-
-@media (max-width: 480px) {
-    #page1{
-        height: 80vh;
-        width: 100%;
-    }
-    #page1 nav {
-        width: 100%;
-        height: 90px;
-        padding: 0 30px;
-        /* display: none; */
-    }
-    #page1 nav .logo .core-logo{
-        width: 100px;
-    }
-    #page1 nav .menu .elems{
-        display: none;
-    }
-    .firstScreen{
-        height: 80vh;
-    }
-}
